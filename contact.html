@@ -7,6 +7,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        @media screen and (max-width: 768px) {
+            .navbar {
+                text-align: center;
+                padding: 0px;
+                margin-bottom: 80px;
+            }
+            .nav {
+                background-color: white;
+                width: 100%;
+                text-align: center;
+                height: 60px;
+                padding: 10px;
+            }
+            .h4 {
+                width: 100%;
+                margin-bottom: 0px;
+            }
+        }
+        
+        @media screen and (min-width: 768px) and (max-width: 980px) {
+            .h4 {
+                margin-left: 10px;
+            }
+        }
+        
+        @media screen and (min-width: 980px) {
+            .h4 {
+                margin-left: 40px;
+            }
+        }
+    </style>
 </head>
 
 <body style="background-image: url(gr-bg.jpeg);">
@@ -14,7 +46,7 @@
 
         <span class="h4 text-white bg-info h-100" style="padding: 25px;">Dustin Irving</span>
 
-        <ul class="nav justify-content-end">
+        <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link text-secondary border-right" href="index.html">About</a>
             </li>
@@ -28,7 +60,7 @@
         </div>
     </nav>
 
-    <div class="container border m-5 col-8 bg-white">
+    <div class="container border bg-white m-4">
         <div class="row">
             <div class="col pt-3 pb-2 text-info">
                 <h4>Contact</h4>
@@ -38,14 +70,14 @@
             <form class="border-top w-100">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> </div>
+                    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">E-mail</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="email" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary bg-info">Submit</button>
             </form>
@@ -54,8 +86,8 @@
     <footer>
         <div class="bg-info" style="height:20px">
         </div>
-        <div class="text-center bg-secondary text-white" style="height:110px;">
-            <p>Copyright</p>
+        <div class="text-center bg-secondary text-white p-4" style="height:110px;">
+            <p>&copy; Copyright</p>
         </div>
     </footer>
 </body>
