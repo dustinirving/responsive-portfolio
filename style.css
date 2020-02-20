@@ -1,0 +1,70 @@
+@media screen and (max-width: 768px) {
+    #entire-navbar {
+        text-align: center;
+        padding: 0px;
+        margin-bottom: 80px;
+    }
+    #tab-bar {
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        height: 60px;
+        padding: 10px;
+    }
+    #name-header {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+    #name-header {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    #name-header {
+        margin-left: 50px;
+    }
+}
+
+
+/* all pages */
+
+#entire-navbar {
+    height: 80px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#name-header {
+    padding: 25px;
+}
+
+#footer-bluebox {
+    height: 20px;
+}
+
+#footer-greybox {
+    height: 110px;
+}
+
+
+/* portfolio page */
+
+.container {
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    text-align: center;
+    color: white;
+    width: 290px;
+    bottom: 10px;
+}
+
+#project {
+    padding: 10px;
+}

@@ -7,46 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style>
-        @media screen and (max-width: 768px) {
-            .navbar {
-                text-align: center;
-                padding: 0px;
-                margin-bottom: 80px;
-            }
-            .nav {
-                background-color: white;
-                width: 100%;
-                text-align: center;
-                height: 60px;
-                padding: 10px;
-            }
-            .h4 {
-                width: 100%;
-                margin-bottom: 0px;
-            }
-        }
-        
-        @media screen and (min-width: 768px) and (max-width: 980px) {
-            .h4 {
-                margin-left: 10px;
-            }
-        }
-        
-        @media screen and (min-width: 980px) {
-            .h4 {
-                margin-left: 40px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body style="background-image: url(gr-bg.jpeg);">
-    <nav class="navbar bg-white pt-0 pb-0 " style="height:80px">
+    <nav id="entire-navbar" class="navbar bg-white">
 
-        <span class="h4 text-white bg-info h-100" style="padding: 25px;">Dustin Irving</span>
+        <span id="name-header" class="h4 text-white bg-info h-100">Dustin Irving</span>
 
-        <ul class="nav justify-content-center">
+        <ul id="tab-bar" class="nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link text-secondary border-right" href="index.html">About</a>
             </li>
@@ -57,7 +26,6 @@
                 <a class="nav-link text-secondary" href="contact.html">Contact</a>
             </li>
         </ul>
-
         </div>
     </nav>
 
@@ -84,9 +52,9 @@
     </div>
 
     <footer>
-        <div class="bg-info" style="height:20px">
+        <div id="footer-bluebox" class="bg-info">
         </div>
-        <div class="text-center bg-secondary text-white p-4" style="height:110px;">
+        <div id="footer-greybox" class="text-center bg-secondary text-white p-4">
             <p>&copy; Copyright</p>
         </div>
     </footer>
