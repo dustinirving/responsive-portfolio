@@ -1,80 +1,80 @@
-@media screen and (max-width: 768px) {
+    /* This is a media query designed to change the format of the navigation bar. When the screen shrinks the tabs are displayed below
+the main header */
+    
+    @media screen and (max-width: 768px) {
+        #entire-navbar {
+            text-align: center;
+            padding: 0px;
+            margin-bottom: 80px;
+        }
+        #tab-bar {
+            background-color: white;
+            width: 100%;
+            text-align: center;
+            height: 60px;
+            padding: 10px;
+        }
+        #name-header {
+            width: 100%;
+            margin-bottom: 0px;
+        }
+    }
+    /* These two media queries are used to add a margin to the header in the navigation bar that aligns with the content on the page */
+    
+    @media screen and (min-width: 768px) {
+        #content-box {
+            margin-left: 10px;
+        }
+        #name-header {
+            margin-left: 10px;
+        }
+    }
+    
+    @media screen and (min-width: 960px) {
+        #content-box {
+            margin-left: 100px;
+        }
+        #name-header {
+            margin-left: 100px;
+        }
+    }
+    /* These properties are applies to all pages */
+    /* This is change the  size and padding of the navigation bar */
+    
     #entire-navbar {
+        height: 80px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    #name-header {
+        padding: 25px;
+    }
+    /* These two styling change the heights of the footer boxes */
+    
+    #footer-bluebox {
+        height: 20px;
+    }
+    
+    #footer-greybox {
+        height: 110px;
+    }
+    /* These properties are only used for the portfolio page */
+    /* These allow for text to overlap images in the portfolio page */
+    
+    .container2 {
+        position: relative;
+    }
+    
+    .text-block {
+        position: absolute;
         text-align: center;
-        padding: 0px;
-        margin-bottom: 80px;
+        color: white;
+        width: 375px;
+        height: 50px;
+        bottom: 50px;
     }
-    #tab-bar {
-        background-color: white;
-        width: 100%;
-        text-align: center;
-        height: 60px;
-        padding: 10px;
+    
+    #project {
+        padding: 25px;
     }
-    #name-header {
-        width: 100%;
-        margin-bottom: 0px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    #content-box {
-        margin-left: 10px;
-    }
-    #name-header {
-        margin-left: 10px;
-    }
-    #image {
-        padding-left: 0px;
-    }
-}
-
-@media screen and (min-width: 960px) {
-    #content-box {
-        margin-left: 100px;
-    }
-    #name-header {
-        margin-left: 100px;
-    }
-}
-
-
-/* all pages */
-
-#entire-navbar {
-    height: 80px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-#name-header {
-    padding: 25px;
-}
-
-#footer-bluebox {
-    height: 20px;
-}
-
-#footer-greybox {
-    height: 110px;
-}
-
-
-/* portfolio page */
-
-.container2 {
-    position: relative;
-}
-
-.text-block {
-    position: absolute;
-    text-align: center;
-    color: white;
-    width: 375px;
-    height: 50px;
-    bottom: 50px;
-}
-
-#project {
-    padding: 25px;
-}
